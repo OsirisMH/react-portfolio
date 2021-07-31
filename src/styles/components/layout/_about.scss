@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    
+    &__text, &__image {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    &__text {
+       padding: 0 15em;
+       text-align: center;
+    }
+
+    &__title {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    &__subtitle{
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    &__paragraph {
+        font-size: 1.1em;
+    }
+
+    .about_image--img {
+        margin: 0;
+        object-fit: contain;
+        width: 400px;
+        margin-top: -40px;
+    }
+
+}

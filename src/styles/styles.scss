@@ -1,0 +1,17 @@
+
+@import './base/settings';
+@import './base/base';
+
+// Components
+//UI
+@import './components/ui/container';
+@import './components/ui/fabScrollTopButton'; 
+@import './components/ui/card';
+@import './components/ui/skillBar';
+
+//Layout
+@import './components/layout/navbar';
+@import './components/layout/about';
+@import './components/layout/skillset';
+@import './components/layout/projects';
+@import './components/layout/conctact';

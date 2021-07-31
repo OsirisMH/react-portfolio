@@ -1,0 +1,10 @@
+.skillset {
+    z-index: 2;
+    padding-bottom: 2em;
+
+    &__flex-container {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

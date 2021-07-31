@@ -1,0 +1,33 @@
+.card {
+    border: 1px solid #fff;
+    flex-basis: 30%;
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 1.2em;
+        justify-content: center;
+        
+        h5 {
+            font-size: inherit;
+            padding-right: 1em;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        flex-direction: column;
+
+        .flex-item {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 1em;
+
+            &__name {
+              
+            }
+
+        }
+    }
+}

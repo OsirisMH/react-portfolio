@@ -1,0 +1,17 @@
+.navbar {
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.navbar__title {
+    margin: 0;
+    padding: inherit;
+    font-size: 1.1em;
+}
+
+.navbar__buttons {
+    padding: inherit;
+    font-size: 1.1em;
+}

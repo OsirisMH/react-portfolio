@@ -1,0 +1,44 @@
+.fabScrollUp {
+    border: 1px solid;
+    border-radius: 10%;
+    bottom: -2em;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 10px;
+    position: fixed;
+    right: 25px;
+}
+
+
+
+.show {
+    bottom: 2em;
+}
+
+.light__theme {
+    .fabScrollUp {
+        background-color: $light_bg;
+        border-color: inherit;
+        color: $light_primary;
+
+        transition: background ease .3s, color ease .3s, bottom .2s;
+        &:hover {
+            background-color: $light_primary;
+            color: $light_bg;
+        }
+    }
+}
+
+.dark__theme {
+    .fabScrollUp {   
+        background-color: $dark_bg;
+        border-color: inherit;
+        color: $dark_primary;
+
+        transition: background ease .3s, color ease .3s, bottom .2s;
+        &:hover {
+            background-color: $dark_primary;
+            color: $dark_bg;
+        }
+    }
+}
