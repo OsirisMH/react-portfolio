@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
-import { Container } from '../ui/Container';
-import { Navbar } from './Navbar';
-import { About } from './About';
-import { Skillset } from './Skillset';
-import { Projects } from './Projects';
-import { Contact } from './Contact';
+import ThemeProvider from '../ThemeContext';
+
+import { Header } from './header/Header';
+import { Main } from './main/Main';
+
 import { scrollActive, scrollUp } from '../../helpers/scroll-behavior';
 
-const name = "Asthar";
-
 export const Layout = () => {
+    const { theme } = useContext(ThemeProvider);
+
     useEffect(() => {
         const sections = document.querySelectorAll('section[id]');
         document.querySelector(`a[href*="${sections[0].getAttribute('id')}"]`).classList.add('active');
@@ -19,12 +18,9 @@ export const Layout = () => {
     }, []);
     
     return (
-        <Container>
-            <Navbar name={name} />
-            <About  name={name} />
-            <Skillset />
-            <Projects />
-            <Contact />
-        </Container>
+        <div className={`${theme}__theme`} >
+            <Header />
+            <Main />
+        </div>
     )
 };

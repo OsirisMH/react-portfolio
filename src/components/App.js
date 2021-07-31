@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Layout } from './layout/Layout';
-import ThemeContext from './ThemeContext';
+import ThemeProvider from './ThemeContext';
 
 const initTheme = localStorage.getItem('theme') || 'light';
 
@@ -17,11 +17,11 @@ export const App = () => {
     }, [theme, setTheme])
 
     return (
-        <ThemeContext.Provider value={{
+        <ThemeProvider.Provider value={{
             theme, 
             setTheme
         }}>
             <Layout />
-        </ThemeContext.Provider>
+        </ThemeProvider.Provider>
     )
 };

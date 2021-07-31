@@ -1,5 +1,4 @@
 .card {
-    border: 1px solid #fff;
     flex-basis: 30%;
 
     &__title {
@@ -14,20 +13,60 @@
         }
     }
 
-    &__skills {
+    .skills {
+        display: block
+    }
+
+    .skill {
         display: flex;
         flex-direction: column;
+        padding: 0 1em;
 
-        .flex-item {
+        &__title {
             align-items: center;
             display: flex;
-            justify-content: flex-start;
-            padding: 0 1em;
+            justify-content: space-between;
+        }
 
-            &__name {
-              
+        &__bar {
+            background-color: #000;
+            border-radius: 20px;
+            display: block;
+            height: 0.5em;
+            margin-bottom: 0.8em;
+            
+            .skill__percentage {
+                background-color: aqua;
+                border-radius: inherit;
+                display: inherit;
+                height: inherit;
             }
+        }
+    }
+}
 
+.dark__theme {
+    .card {
+        .skill {
+            &__bar {
+                background-color: lighten($color: $dark_bg, $amount: 10);
+                .skill__percentage {
+                    background-color: $dark_primary;
+                }
+            }
+        }
+    }
+}
+
+.light__theme {
+    .card {
+        .skill {
+            &__bar {
+                background-color: darken($color: $light_bg, $amount: 20);
+                .skill__percentage {
+                    background-color: $light_primary;
+                }
+            }
         }
     }
 }

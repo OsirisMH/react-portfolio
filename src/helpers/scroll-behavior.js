@@ -15,7 +15,7 @@ export const scrollActive = (sections) => {
 
 export const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
-    if (window.scrollY >= 560)
+    if (window.scrollY >= 500)
         scrollUp.classList.add('show');
     else 
         scrollUp.classList.remove('show');

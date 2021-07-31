@@ -15,10 +15,10 @@ html, body {
 .sticky {
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
 }
+
+
 
 .btn {
     background: none;
@@ -33,7 +33,7 @@ html, body {
     background-color: $light_bg;
     color: $dark-gray;
 
-    transition: background ease .3s;
+    transition: background ease .5s;
 
     .navbar {
         background-color: inherit;
@@ -55,7 +55,7 @@ html, body {
     background-color: $dark_bg;
     color: $light-gray;
 
-    transition: background ease .3s;
+    transition: background ease .5s;
 
     .navbar {
         background-color: inherit;

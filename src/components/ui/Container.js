@@ -1,16 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import ThemeContext from '../ThemeContext';
 import { FabScrollTopButton } from './FabScrollTopButton';
 
 export const Container = (props) => {
 
-    const { theme } = useContext(ThemeContext)
-
     return (
-        <div
-            className={`${theme}__theme container`}  
-        >
+        <div className="container">
             { props.children }
             <FabScrollTopButton />
         </div>
