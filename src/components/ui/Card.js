@@ -16,7 +16,7 @@ export const Card = ({title, icon, data}) => {
                     const { skillName, skillLevel } = skill;
                     const percentage = skillLevel + '%';
                     return (
-                        <div className="skill">
+                        <div className="skill" key={skill.skillName}>
                             <div className="skill__title">
                                 <p className="skill__name">{skillName}</p>
                                 <span className="skill__number">{percentage}</span>

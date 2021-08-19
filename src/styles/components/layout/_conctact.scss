@@ -1,4 +1,60 @@
 .contact {
-    height: calc(100vh - 2em);
-    z-index: 2;
+    &__flex-container {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    &__subtitle {
+        font-size: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+    }
+
+    &__flex-container {
+        display: flex;
+        justify-content: center;
+        gap: 15em;
+        margin: 5em;
+
+        .contact__linkedin,
+        .contact__github,
+        .contact__email {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            
+            &:hover {
+                color: darken($color: #000000, $amount: 10)
+            }
+        }
+    }
+}
+
+.light__theme {
+    .contact {
+        &__subtitle {
+            color: lighten($color: $dark-gray, $amount: 40);
+        }
+    }
+}
+
+.dark__theme {
+    .contact {
+        &__subtitle {
+            color: darken($color: $light-gray, $amount: 20);
+        }
+    }
 }

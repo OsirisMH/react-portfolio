@@ -1,8 +1,6 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
-    margin-bottom: 5em;
     
     &__text, &__image {
         display: flex;
@@ -10,6 +8,10 @@
         justify-content: center;
         align-items: center;
         flex: 1;
+    }
+
+    &__image {
+        justify-content: flex-start;
     }
 
     &__text {

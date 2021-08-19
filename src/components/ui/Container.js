@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { FabScrollTopButton } from './FabScrollTopButton';
-
-export const Container = (props) => {
-
+export const Container = ({className = 'container', children}) => {
     return (
-        <div className="container">
-            { props.children }
-            <FabScrollTopButton />
+        <div className={className}>
+            { children }
         </div>
     )
 };

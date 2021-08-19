@@ -6,6 +6,8 @@ import { Header } from './header/Header';
 import { Main } from './main/Main';
 
 import { scrollActive, scrollUp } from '../../helpers/scroll-behavior';
+import { Container } from '../ui/Container';
+import { FabScrollTopButton } from '../ui/FabScrollTopButton';
 
 export const Layout = () => {
     const { theme } = useContext(ThemeProvider);
@@ -18,9 +20,10 @@ export const Layout = () => {
     }, []);
     
     return (
-        <div className={`${theme}__theme`} >
+        <Container className={`container ${theme}__theme`} >
             <Header />
             <Main />
-        </div>
+            <FabScrollTopButton />
+        </Container>
     )
 };
