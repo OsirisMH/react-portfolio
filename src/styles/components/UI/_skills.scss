@@ -1,0 +1,125 @@
+.skills {
+    &__title {
+        font-size: 2em;
+        font-weight: bold;
+        padding: .5em 0em;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .category {
+            &__name {
+                align-items: center;
+                background-color: var(--background-color-opacity);
+                display: flex;
+                gap: 0.5em;
+                padding: 1em;
+
+                .category--icon {
+                    padding: 0em .3em;
+                }
+
+                .category--title {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    letter-spacing: .05em;
+                    flex-grow: 8;
+                }
+
+                .category--toggle-button {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 50%;
+                    color: var(--text-color);
+                    font-size: 1.2em;
+                    height: 2em;
+                    width: 2em;
+                    
+                    &:active {
+                        animation-name: active-hover;
+                        animation-duration: 5s;
+                    }
+                }
+            }
+        }
+
+        .content {
+            border-top: 3px solid var(--background-color);
+            background-color: var(--background-color-opacity);
+            display: flex;
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+                padding: 1.5em 0.5em;
+                width: 100%;
+                gap: 1em;
+
+                .skill {
+                    animation: rotateX 600ms ease-in-out forwards;
+                    transform-origin: top center;
+
+                    .content__data {
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        span {
+                            font-size: 1.2em;
+                        }
+                    }
+    
+                    .skill__bar {
+                        background-color: var(--background-color-opacity);
+                        border-radius:10px;
+                        display: block;
+                        height: 0.4em;
+                        margin: 0.8em 0em;
+    
+                        &--percentage {
+                            background-color: var(--primary-color);
+                            border-radius: inherit;
+                            display: inherit;
+                            height: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-hide {
+    display: none !important;
+}
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+
+@keyframes active-hover {
+    100% {
+        background-color: var(--background-color);
+    }
+    50% {
+        background-color: rgba(var(--background-color), 10);
+    }
+    0% {
+      background-color: inherit;
+    }
+}
