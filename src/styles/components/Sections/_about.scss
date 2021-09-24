@@ -1,0 +1,57 @@
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0em;
+
+    &__picture,
+    &__cv {
+        margin-bottom: 2.5em;
+    }
+
+    &__picture {
+        width: 260px;
+        height: 260px;
+        
+        border-radius: 50%;
+        background-color: var(--background-color-opacity);
+        
+        &--img {
+            height: 90%;
+        }
+    }
+
+    &__text {
+        padding: 0em 1em;
+        text-align: start;
+        margin-bottom: 1.5em;
+
+        .title {
+            font-size: 1.8em;
+            font-weight: 600;
+            letter-spacing: .02em;
+            padding-bottom: .4em;
+        }
+
+        .description {
+            font-size: 1.02em;
+            font-weight: 400;
+        }
+    }
+
+    &__cv {
+        align-self: flex-start;
+        padding: 0em 0em 0em 1em;
+        width: 50%;
+        .btn-cv {
+            display: block;
+            background-color: var(--primary-color);
+            font-size: 1.15em;
+            font-weight: bold;
+
+            &__icon {
+                margin-left: 0.5em;
+            }
+        }
+    }
+}

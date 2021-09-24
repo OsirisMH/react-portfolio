@@ -1,72 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
 
-* {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --primary-color: #{$main_primary};
+    --secondary-color: #{$main_secondary};
+    --background-color: #{$main_bg};
+    --background-color-opacity: #{$main_bg-opacity};
+    --text-color: #{$main_text};
+    --primary-color-rgb: #{hexToRGB($main_primary)};
+}
+
+.dark {
+    --primary-color: #{$dark_primary};
+    --secondary-color: #{$dark_secondary};
+    --background-color: #{$dark_bg};
+    --background-color-opacity: #{$dark_bg-opacity};
+    --text-color: #{$dark_text};
+    --primary-color-rgb: #{hexToRGB($dark_primary)};
+}
+
+body {
+    // font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
-}
-
-html, body {
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 0px 1em;
-    text-decoration: none;
-}
-
-.light__theme {
-    background-color: $light_bg;
-    color: $dark-gray;
-
-    transition: background ease .5s;
-
-    .navbar {
-        background-color: inherit;
-    }
-    .btn__primary {
-        color: inherit;
-        transition: color ease .3s;
-
-        &:hover {
-            color: $light_primary;
-        }
-    }
-    .active {
-        color: $light_primary;
-    }
-}
-
-.dark__theme {
-    background-color: $dark_bg;
-    color: $light-gray;
-
-    transition: background ease .5s;
-
-    .navbar {
-        background-color: inherit;
-    }
-    .btn__primary {
-        color: inherit;
-        transition: color ease .3s;
-
-        &:hover{
-            color: $dark_primary;
-        }
-    }
-    .active {
-        color: $dark_primary;
-    }
+    position: relative;
+    transition: background ease .3s;
 }

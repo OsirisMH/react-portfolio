@@ -1,1 +1,1 @@
-export const projectImages = require.context( '../assets/images/', true );
+export const image = require.context( '../assets/images/', true );

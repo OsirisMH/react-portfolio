@@ -1,8 +1,22 @@
 // Colores
-$light-gray: #FFFFFF;
-$dark-gray: #363636;
-$light_primary: #be001d;
-$dark_primary: #58B3F3;
+// Main colors
+$main_primary: #87161C;
+$main_secondary: #4219E3;
+$main_bg: #ffffff;
+$main_bg-opacity: rgba(darken($main_bg, 55), .10);;
+$main_text: #181818;
 
-$light_bg: #fafafa;
+// Dark colors
+$dark_primary: #58B3F3;
+$dark_secondary: #363636;
 $dark_bg: #152243;
+$dark_bg-opacity: rgba(lighten($dark_bg, 35), .20);
+$dark_text: #fcfcfc;
+
+// Other features
+$theme_transition: background ease .5s, color ease .5s;
+
+// Functions
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+}

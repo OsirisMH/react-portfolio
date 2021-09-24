@@ -1,27 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { Layout } from './layout/Layout';
-import ThemeProvider from './ThemeContext';
+import React from 'react';
 
-const initTheme = localStorage.getItem('theme') || 'light';
+import { LandingScreen } from './LandingScreen';
 
 export const App = () => {
-    const [theme, setTheme] = useState(initTheme);
-    
-    useEffect(() => {
-        if ( theme === 'light' ){
-            localStorage.setItem('theme', 'light');
-        }
-        else {
-            localStorage.setItem('theme', 'dark');
-        }
-    }, [theme, setTheme])
-
-    return (
-        <ThemeProvider.Provider value={{
-            theme, 
-            setTheme
-        }}>
-            <Layout />
-        </ThemeProvider.Provider>
-    )
+    return <LandingScreen />
 };

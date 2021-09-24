@@ -1,0 +1,44 @@
+{
+    "frontend": [
+        {
+            "skillName": "React",
+            "skillLevel": 75
+        },
+        {
+            "skillName": "CSS",
+            "skillLevel": 60
+        },
+        {
+            "skillName": "HTML",
+            "skillLevel": 80
+        },
+        {
+            "skillName": "JavaScript",
+            "skillLevel": 70
+        }
+    ],
+    "backend" : [
+        {
+            "skillName": "Node",
+            "skillLevel": 50
+        },
+        {
+            "skillName": "PHP",
+            "skillLevel": 35
+        }
+    ],
+    "database": [
+        {
+            "skillName": "SQLServer",
+            "skillLevel": 80
+        },
+        {
+            "skillName": "MySQL",
+            "skillLevel": 75
+        },
+        {
+            "skillName": "MongoDB",
+            "skillLevel": 65
+        }
+    ]
+}
