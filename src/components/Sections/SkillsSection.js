@@ -10,7 +10,12 @@ export const SkillsSection = () => {
             <div className="skills__container">
                 {
                     skillsData.map( skill => (
-                        <Skill title={skill.title} icon={skill.icon} data={skill.data} />
+                        <Skill
+                            title={skill.title}
+                            icon={skill.icon}
+                            data={skill.data}
+                            key={skill.title}
+                        />
                     ))
                 }
             </div>

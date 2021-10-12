@@ -28,7 +28,7 @@ export const Skill = ({ title, icon, data }) => {
                             const { skillName, skillLevel } = skill;
                             const percentage = skillLevel + '%';
                             return (
-                                <div className="skill">
+                                <div className="skill" key={ skillName }>
                                     <div className="content__data">
                                         <span>{ skillName }</span>
                                         <span>{ percentage }</span>

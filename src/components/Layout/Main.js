@@ -2,6 +2,7 @@ import React from 'react';
 
 import { AboutSection } from '../Sections/AboutSection';
 import { SkillsSection } from '../Sections/SkillsSection';
+import { PortfolioSection } from '../Sections/PortfolioSection';
 import { LoremIpsum } from '../LoremIpsum';
 
 export const Main = () => {
@@ -9,6 +10,7 @@ export const Main = () => {
         <main className="main">
             <AboutSection />
             <SkillsSection />
+            <PortfolioSection />
             <br />
             <br />
             <br />
