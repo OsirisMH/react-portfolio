@@ -18,7 +18,7 @@ export const Skill = ({ title, icon, data }) => {
                     className="category--toggle-button"
                     onClick={ handleOpen }
                 >
-                    <i><FontAwesomeIcon icon={faChevronDown} /></i>
+                    <i><FontAwesomeIcon icon={faChevronDown} className={ (isOpen) ? 'toggle_open' : '' } /></i>
                 </button>
             </div>
             <div className={`content ${(!isOpen) ? 'content-hide' : '' }`}>

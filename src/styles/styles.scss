@@ -6,12 +6,15 @@
 // Layout
 @import './components/Layout/header';
 @import './components/Layout/main';
+@import './components/Layout/footer';
 
 // Sections
 @import './components/Sections/about';
 @import './components/Sections/portfolio';
+@import './components/Sections/contact';
 
 // UI
 @import './components/UI/container-wrapper';
 @import './components/UI/skills';
 @import './components/UI/projects-slider';
+@import './components/UI/social-media';

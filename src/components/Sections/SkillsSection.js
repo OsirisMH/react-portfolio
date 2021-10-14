@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { Skill } from '../UI/Skill';
-import { skillsData } from '../../assets/data/skills';
+import { skillsData } from '../../assets/data/skillsData';
 
 export const SkillsSection = () => {
     return (
         <section id="skills" className="skills">
-            <h3 className="skills__title">Habilidades y hobbies</h3>
+            <h3 className="skills__title">Habilidades</h3>
             <div className="skills__container">
                 {
                     skillsData.map( skill => (

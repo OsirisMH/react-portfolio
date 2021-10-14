@@ -3,7 +3,7 @@ import React from 'react';
 import { AboutSection } from '../Sections/AboutSection';
 import { SkillsSection } from '../Sections/SkillsSection';
 import { PortfolioSection } from '../Sections/PortfolioSection';
-import { LoremIpsum } from '../LoremIpsum';
+import { ContactSection } from '../Sections/ContactSection';
 
 export const Main = () => {
     return (
@@ -11,11 +11,7 @@ export const Main = () => {
             <AboutSection />
             <SkillsSection />
             <PortfolioSection />
-            <br />
-            <br />
-            <br />
-            <LoremIpsum id="portfolio" />
-            <LoremIpsum id="contact" />
+            <ContactSection />
         </main>
     )
 }

@@ -39,6 +39,12 @@
                     height: 2em;
                     width: 2em;
                     
+                    i {
+                        svg {
+                            transition: .3s ease transform;
+                        }
+                    }
+
                     &:active {
                         animation-name: active-hover;
                         animation-duration: 5s;
@@ -122,4 +128,8 @@
     0% {
       background-color: inherit;
     }
+}
+
+.toggle_open {
+    transform: rotate(-180deg);
 }

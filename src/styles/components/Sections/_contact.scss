@@ -1,0 +1,22 @@
+.contact {
+    margin-top: 1.5em;
+    
+    &__info {
+        padding: 0em;
+        &--title,
+        &--subtitle {
+            text-align: center;
+        }
+        
+        &--title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    
+        &--subtitle {
+            filter: opacity(0.8);
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+}

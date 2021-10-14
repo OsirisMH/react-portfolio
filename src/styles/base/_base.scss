@@ -7,6 +7,7 @@
     --background-color-opacity: #{$main_bg-opacity};
     --text-color: #{$main_text};
     --primary-color-rgb: #{hexToRGB($main_primary)};
+    --text-color-dark: #{$main_text_dark};
 }
 
 .dark {
@@ -16,6 +17,7 @@
     --background-color-opacity: #{$dark_bg-opacity};
     --text-color: #{$dark_text};
     --primary-color-rgb: #{hexToRGB($dark_primary)};
+    --text-color-dark: #{$dark_text_dark};
 }
 
 body {
