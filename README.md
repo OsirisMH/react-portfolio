@@ -1,5 +1,8 @@
 # Mi portafolio personal hecho con React
 
+## Página de mi repositorio:
+- https://osirismh.github.io/react-portfolio/
+
 En la carpeta src/assets/data se encuentran los archivos de información que mostrará el portafolio. El portafolio utiliza imagenes las cuales puedes modificar en los mismos archivos la ruta a estas. Para evitar algun error sigue la estructura de los mismos.
 
 Los iconos se manejan utilizando FontAwesome, por lo que podras el repertorio de iconos que este servicio posee.
@@ -16,7 +19,7 @@ Puedes utilizar los siguientes comandos:
 
 ### `npm run build`
 
-## Aplicación hecha creada utilizando create-react-app
+## Aplicación creada utilizando create-react-app
 
 Esto quiere decir que no es un sitio SEO freandly, por lo que no será indexada por los motores de busqueda de Google.
 De necesitarse, puedes migrar a otra tecnología como NextJs.
