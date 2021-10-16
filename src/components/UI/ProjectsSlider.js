@@ -55,9 +55,9 @@ export const ProjectsSlider = () => {
                     <i><FontAwesomeIcon icon={faChevronLeft} size="lg" /></i>
                 </button>
                 <div className="slider__container--slide__container" ref={ slider }>
-                {
-                    projectsData.map( (project) => <Slide project={project} key={project.repository} />)
-                }
+                    {
+                        projectsData.map( (project) => <Slide project={project} key={project.repository} />)
+                    }
                 </div>
                 <button className="slider__container--rightBtn" onClick={ nextSlide } >
                     <i><FontAwesomeIcon icon={faChevronRight} size="lg" /></i>

@@ -102,27 +102,51 @@
     }
 }
 
-/* Para desktop */
-// @media (max-width: 991.98px) {
-//     .slider {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 1em;
+@media only screen  and (min-width : 1224px) {
+    .slider {
+        &__container {
+            &--leftBtn,
+            &--rightBtn {
+                top: 0em;
+                
+                i {
+                    font-size: 1.7em;
+                }
+            }
+
+            &--leftBtn {
+                left: 4em;
+            }
+            
+            &--rightBtn {
+                right: 4em;
+            }            
     
-//         &__container {
-//             display: flex;
-//             flex-direction: row;
+            &--slide__container {
+                .slide {
+                    display: flex;
+                    padding: 1em 10em; 
     
-//             &--leftBtn,
-//             &--rightBtn {
-//                 background-color: transparent;
-//                 border: none;
-//             }
-    
-//             &--slide {
-//                 display: flex;
-//                 flex-direction: row;
-//             }
-//         }
-//     }
-// }
+                    .slide__left-container {
+                        flex-shrink: 2;
+                        margin-bottom: 0em;
+                        
+
+                        &--image {
+                            transform: scale(80%);
+                        }
+                    }
+        
+                    .slide__right-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        flex-basis: 70%;
+                        flex-shrink: 1;
+                    }
+                }
+            }
+        }
+    }
+}

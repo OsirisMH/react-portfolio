@@ -11,7 +11,7 @@ export const projectsData = [
     },
     {
         name: "JournalApp",
-        description: "Officia cupidatat cillum ut dolore aute incididunt nisi est amet minim nostrud in dolor. Tempor fugiat enim voluptate do veniam esse quis proident eu laborum do.",
+        description: "Aplicación para notas diarias o simplemente un diario, hecha con React en conjunto con Scss y utilizando Firebase como servicio.",
         demo: null,
         repository: "https://github.com/OsirisMH/react-journal-app",
         image: "./JournalApp.PNG",
@@ -19,7 +19,7 @@ export const projectsData = [
     },
     {
         name: "GifExpertApp",
-        description: "Officia cupidatat cillum ut dolore aute incididunt nisi est amet minim nostrud in dolor. Tempor fugiat enim voluptate do veniam esse quis proident eu laborum do.",
+        description: "Sencilla aplicación para buscar Gifs hecha con React.",
         demo: "https://osirismh.github.io/react-gifexpertapp/",
         repository: "https://github.com/OsirisMH/react-gifexpertapp",
         image: "./GifExpertApp.PNG",
@@ -27,7 +27,7 @@ export const projectsData = [
     },
     {
         name: "ServantsApp",
-        description: "Officia cupidatat cillum ut dolore aute incididunt nisi est amet minim nostrud in dolor. Tempor fugiat enim voluptate do veniam esse quis proident eu laborum do.",
+        description: "Sencilla aplicación que muestra información básica de algunos personajes del universo de Fate.",
         demo: "https://osirismh.github.io/react-servants-app/",
         repository: "https://github.com/OsirisMH/react-servants-app",
         image: "./ServantsApp.PNG",

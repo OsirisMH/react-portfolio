@@ -4,11 +4,11 @@ import { useDarkMode } from "../hooks/useDarkMode";
 import { Layout } from "./Layout/Layout";
 
 export const LandingScreen = () => {
-    const { darkMode, setDarkMode } = useDarkMode();
+    const { darkMode, setDark } = useDarkMode();
     const userInfo = { name: 'Osiris' }
 
     return (
-        <AppContext.Provider value={{ darkMode, setDarkMode, userInfo }}>
+        <AppContext.Provider value={{ darkMode, setDark, userInfo }}>
             <Layout />
         </AppContext.Provider>
     )

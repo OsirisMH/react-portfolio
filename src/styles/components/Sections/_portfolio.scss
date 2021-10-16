@@ -20,3 +20,13 @@
         }
     }
 }
+
+@media only screen  and (min-width : 1224px) {
+    .portfolio {
+        margin-top: 5em;
+        
+        &__info {
+            margin-bottom: .5em;
+        }
+    }
+}

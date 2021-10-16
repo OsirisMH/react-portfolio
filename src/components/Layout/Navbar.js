@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
@@ -7,14 +7,16 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import AppContext from "../AppContext";
 
 export const Navbar = () => {
-    
-    const { darkMode, setDarkMode, userInfo } = useContext(AppContext);
+    const navbar = useRef(null);
+    const { darkMode, setDark, userInfo } = useContext(AppContext);
+
     const brand = `< ${ userInfo.name.split(' ')[0] } />`;
 
-    const handleDarkMode = () => { setDarkMode(!darkMode) };
-
+    const handleDarkMode = () => {
+        setDark();
+    };
     const closeNavbar = (e) => {
-        document.querySelector('.offcanvas-collapse').classList.toggle('open')
+        navbar.current.classList.toggle('open')
     }
 
     return (
@@ -23,7 +25,7 @@ export const Navbar = () => {
                 <a className="navbar-brand nav__logo flex-grow-1" href="/#">
                     <span className="d-inline-block align-text-top" > { brand } </span>
                 </a>
-                <div className="navbar-collapse flex-grow-0 offcanvas-collapse" id="navbarsExampleDefault">
+                <div className="navbar-collapse flex-grow-0 offcanvas-collapse" id="navbarsExampleDefault" ref={ navbar }>
                     <ul className="navbar-nav nav__sections">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#about">Sobre mí</a>

@@ -11,7 +11,7 @@ export const skillsData = [
             },
             {
                 "skillName": "HTML",
-                "skillLevel": 80
+                "skillLevel": 85
             },
             {
                 "skillName": "CSS",
@@ -19,7 +19,7 @@ export const skillsData = [
             },
             {
                 "skillName": "JavaScript",
-                "skillLevel": 70
+                "skillLevel": 80
             }
         ]
     },

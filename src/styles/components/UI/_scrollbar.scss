@@ -1,0 +1,26 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*  MAIN THEME  */
+::-webkit-scrollbar-track {
+    background: $main_scrollbar-bg;
+}
+::-webkit-scrollbar-thumb {
+    background: $main_primary;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: $main_scrollbar-hover;
+}
+
+/*  DARK MODE   */
+.dark-scroll::-webkit-scrollbar-track {
+    background: $dark_scrollbar-bg;
+}
+.dark-scroll::-webkit-scrollbar-thumb {
+    background: $dark_primary;
+}
+.dark-scroll::-webkit-scrollbar-thumb:hover {
+    background: $dark_scrollbar-hover;
+}
