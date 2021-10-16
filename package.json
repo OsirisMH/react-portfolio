@@ -1,6 +1,6 @@
 {
   "name": "react-portafolio",
-  "version": "0.1.9",
+  "version": "1.4.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

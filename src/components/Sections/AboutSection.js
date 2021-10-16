@@ -24,7 +24,7 @@ export const AboutSection = () => {
                 </p>
             </div>
             <div className="about__cv">
-                <a href="https://meet.google.com/lookup/cgxu3wazpx" target="_blank" className="btn btn-secondary btn-cv" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1PEf_73Zy54WQ3NdR_ISFS3eoD601uPrl/view?usp=sharing" target="_blank" className="btn btn-secondary btn-cv" rel="noreferrer">
                     <span className="btn-cv__text">Descargar CV</span>
                     <i className="btn-cv__icon"><FontAwesomeIcon icon={ faFileDownload } /></i>                    
                 </a>

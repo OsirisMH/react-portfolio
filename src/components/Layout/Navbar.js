@@ -5,6 +5,7 @@ import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import AppContext from "../AppContext";
+import { scrollFix } from "../../helpers/scroll-behavior";
 
 export const Navbar = () => {
     const navbar = useRef(null);
@@ -17,7 +18,12 @@ export const Navbar = () => {
     };
     const closeNavbar = (e) => {
         navbar.current.classList.toggle('open')
-    }
+    };
+    const offset = (e) => {
+        const id = e.target.attributes.href.nodeValue;
+        const element = document.querySelector(id);
+        scrollFix(element);
+    };
 
     return (
         <nav id="navbar" className="navbar navbar-expand-lg fixed-top nav__container">
@@ -28,16 +34,16 @@ export const Navbar = () => {
                 <div className="navbar-collapse flex-grow-0 offcanvas-collapse" id="navbarsExampleDefault" ref={ navbar }>
                     <ul className="navbar-nav nav__sections">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#about">Sobre mí</a>
+                            <a onClick={offset} className="nav-link active" aria-current="page" href="#about">Sobre mí</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#skills">Habilidades / Hobbies</a>
+                            <a onClick={offset} className="nav-link" aria-current="page" href="#skills">Habilidades / Hobbies</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#portfolio">Portafolio</a>
+                            <a onClick={offset} className="nav-link" aria-current="page" href="#portfolio">Portafolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contacto</a>
+                            <a onClick={offset} className="nav-link" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>

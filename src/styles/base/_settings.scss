@@ -1,7 +1,7 @@
 // Colores
 // Main colors
 $main_primary: #87161C;
-$main_secondary: #4219E3;
+$main_secondary: #440B0E;
 $main_bg: #ffffff;
 $main_bg-opacity: rgba(darken($main_bg, 55), .10);
 $main_text: #181818;
@@ -11,12 +11,17 @@ $main_scrollbar-hover: #681c20;
 
 // Dark colors
 $dark_primary: #58B3F3;
-$dark_secondary: #363636;
+$dark_secondary: #2C5979;
 $dark_bg: #152243;
 $dark_bg-opacity: rgba(lighten($dark_bg, 35), .20);
 $dark_text: #fcfcfc;
 $dark_text_dark: rgba(darken($dark_primary, 35), 1);
 $dark_scrollbar-bg: #2b3250;
+
+
+
+
+
 $dark_scrollbar-hover: #3f82b1;
 
 // Other features

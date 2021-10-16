@@ -1,22 +1,10 @@
-export const scrollActive = (sections) => {
-    const scrollY = window.pageYOffset;
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 150;
-        let sectionId = current.getAttribute('id');
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('a[href*=' + sectionId + ']').classList.add('active');
-        }
-        else {
-            document.querySelector('a[href*=' + sectionId + ']').classList.remove('active');
-        }
-    });
-};
-
-export const scrollUp = () => {
-    const scrollUp = document.getElementById('scroll-up');
-    if (window.scrollY >= 500)
-        scrollUp.classList.add('show');
-    else 
-        scrollUp.classList.remove('show');
-}
+export const scrollFix = (element) => {
+    const body = document.querySelector('body');
+    const navbar = document.querySelector('#navbar');
+    
+    if ( window.location.hash ) {
+        setTimeout( () => {
+            window.scroll(0, element.offsetTop - body.scrollTop - navbar.offsetHeight - 50)
+        }, 1)
+    }
+} 

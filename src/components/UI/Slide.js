@@ -27,7 +27,10 @@ export const Slide = ({project}) => {
                     }
                 </div>
                 <div className='slide__right-container--groupBtn'>
-                    <a href={project.demo} target="_blank" rel="noreferrer">Demo</a>
+                    {
+                        ( project.demo )
+                        && <a href={project.demo} target="_blank" rel="noreferrer">Demo</a>
+                    }
                     <a href={project.repository} target="_blank" rel="noreferrer">Repository</a>
                 </div>
             </div>
