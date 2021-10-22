@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.c5581225.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.ffb71a79.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.ffb71a79.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.61e0cfec.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.61e0cfec.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.a25e4e5b.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.a25e4e5b.js.map",
     "static/css/2.679831fc.chunk.css": "/react-portfolio/static/css/2.679831fc.chunk.css",
@@ -14,17 +14,17 @@
     "static/css/2.679831fc.chunk.css.map": "/react-portfolio/static/css/2.679831fc.chunk.css.map",
     "static/css/main.c5581225.chunk.css.map": "/react-portfolio/static/css/main.c5581225.chunk.css.map",
     "static/js/2.15af4378.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.15af4378.chunk.js.LICENSE.txt",
-    "static/media/CalendarApp.PNG": "/react-portfolio/static/media/CalendarApp.7704f80a.PNG",
-    "static/media/GifExpertApp.PNG": "/react-portfolio/static/media/GifExpertApp.ca1c144d.PNG",
-    "static/media/JournalApp.PNG": "/react-portfolio/static/media/JournalApp.565ae0e6.PNG",
+    "static/media/CalendarApp.png": "/react-portfolio/static/media/CalendarApp.8b5ebb97.png",
+    "static/media/GifExpertApp.png": "/react-portfolio/static/media/GifExpertApp.0b8700b3.png",
+    "static/media/JournalApp.png": "/react-portfolio/static/media/JournalApp.800ea509.png",
     "static/media/Photo.png": "/react-portfolio/static/media/Photo.34179e40.png",
-    "static/media/ServantsApp.PNG": "/react-portfolio/static/media/ServantsApp.5f3eb1d5.PNG"
+    "static/media/ReactPortfolio.png": "/react-portfolio/static/media/ReactPortfolio.ce59aeba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a25e4e5b.js",
     "static/css/2.679831fc.chunk.css",
     "static/js/2.15af4378.chunk.js",
     "static/css/main.c5581225.chunk.css",
-    "static/js/main.ffb71a79.chunk.js"
+    "static/js/main.61e0cfec.chunk.js"
   ]
 }
