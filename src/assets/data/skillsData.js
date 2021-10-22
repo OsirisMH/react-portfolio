@@ -6,16 +6,16 @@ export const skillsData = [
         icon: faLaptop,
         data: [
             {
-                "skillName": "React",
+                "skillName": "ReactJS",
                 "skillLevel": 75
             },
             {
                 "skillName": "HTML",
-                "skillLevel": 85
+                "skillLevel": 90
             },
             {
                 "skillName": "CSS",
-                "skillLevel": 60
+                "skillLevel": 65
             },
             {
                 "skillName": "JavaScript",
@@ -28,12 +28,8 @@ export const skillsData = [
         icon: faServer,
         data: [
             {
-                "skillName": "PHP",
-                "skillLevel": 30
-            },
-            {
-                "skillName": "Node",
-                "skillLevel": 75
+                "skillName": "NodeJS (Express)",
+                "skillLevel": 70
             }
         ]
     },
@@ -47,15 +43,11 @@ export const skillsData = [
             },
             {
                 "skillName": "SQLServer",
-                "skillLevel": 85
+                "skillLevel": 80
             },
             {
                 "skillName": "MongoDB",
-                "skillLevel": 65
-            },
-            {
-                "skillName": "MariaDB",
-                "skillLevel": 75
+                "skillLevel": 70
             }
         ]
     }

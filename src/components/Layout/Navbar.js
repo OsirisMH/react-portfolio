@@ -37,7 +37,7 @@ export const Navbar = () => {
                             <a onClick={offset} className="nav-link active" aria-current="page" href="#about">Sobre mí</a>
                         </li>
                         <li className="nav-item">
-                            <a onClick={offset} className="nav-link" aria-current="page" href="#skills">Habilidades / Hobbies</a>
+                            <a onClick={offset} className="nav-link" aria-current="page" href="#skills">Habilidades</a>
                         </li>
                         <li className="nav-item">
                             <a onClick={offset} className="nav-link" aria-current="page" href="#portfolio">Portafolio</a>
