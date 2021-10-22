@@ -28,7 +28,7 @@ export const Navbar = () => {
     return (
         <nav id="navbar" className="navbar navbar-expand-lg fixed-top nav__container">
             <div className="container-fluid nav__items">
-                <a className="navbar-brand nav__logo flex-grow-1" href="/#">
+                <a className="navbar-brand nav__logo flex-grow-1" href="#about">
                     <span className="d-inline-block align-text-top" > { brand } </span>
                 </a>
                 <div className="navbar-collapse flex-grow-0 offcanvas-collapse" id="navbarsExampleDefault" ref={ navbar }>
